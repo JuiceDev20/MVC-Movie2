@@ -84,7 +84,7 @@ namespace MVC_Movie2.Controllers
             {
                 _context.Add(movie);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index");
             }
             return View(movie);
         }
